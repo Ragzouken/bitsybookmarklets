@@ -1,3 +1,5 @@
+//uses Sean S. LeBlanc's dynamic background script. (https://github.com/seleb/bitsy-hacks/blob/master/src/dynamic%20background.js)
+
 var controller = document.createElement("div");
 var buttonlogic = document.createElement("script");
 var dynamicbackground = document.createElement("script");
