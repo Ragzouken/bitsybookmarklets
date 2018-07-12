@@ -1,14 +1,5 @@
-function download(filename, text) {
-    var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    element.setAttribute('download', filename);
-
-    element.style.display = 'none';
-    document.body.appendChild(element);
-
-    element.click();
-
-    document.body.removeChild(element);
+function load(text) {
+    window.open('data:text/plain;charset=utf-8,' + encodeURIComponent(text), "", "_blank");
 }
 
-download(document.title+".bitsydata", document.getElementById("exportedGameData").innerText)
+load(document.getElementById("exportedGameData").innerText);
